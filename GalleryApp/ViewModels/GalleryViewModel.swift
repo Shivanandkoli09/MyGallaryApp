@@ -10,14 +10,21 @@ import Combine
 
 class GalleryViewModel: ObservableObject {
     @Published var images: [ImageModel] = []
-    @Published var allImages: [ImageModel] = []   // <-- made public so GalleryView can access
-    private let service = ImageService()
+    @Published var allImages: [ImageModel] = []
     private var currentPage = 0
     private let pageSize = 4
 
+    private let repository: ImageRepositoryProtocol
+
+    init(repository: ImageRepositoryProtocol = ImageRepository()) {
+        self.repository = repository
+    }
+
     func fetchImages() {
-        // Load all images (from JSON or Core Data)
-        allImages = service.loadImages()
+        let fresh = repository.fetchImages()
+        allImages = fresh
+        images.removeAll()
+        currentPage = 0
         loadNextPage()
     }
 

@@ -12,9 +12,14 @@ class ImageService {
 
     func loadImages() -> [ImageModel] {
         guard let url = Bundle.main.url(forResource: "wallpapers", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let json = try? JSONDecoder().decode([ImageModel].self, from: data) else { return [] }
-        return json
+              let data = try? Data(contentsOf: url) else {
+            return []
+        }
+        do { let decoded = try JSONDecoder().decode([ImageModel].self, from: data)
+            return decoded
+        } catch {
+            return []
+        }
     }
     
     func saveImages(_ images: [ImageModel]) {
