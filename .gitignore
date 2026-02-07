@@ -1,0 +1,7 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+xcuserdata/
+
+# Firebase
+GoogleService-Info.plist

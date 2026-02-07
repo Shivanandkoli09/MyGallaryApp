@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5569AFCD2F373011009E842F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFCC2F373011009E842F /* FirebaseAnalytics */; };
+		5569AFCF2F373011009E842F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFCE2F373011009E842F /* FirebaseAuth */; };
+		5569AFD12F373011009E842F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD02F373011009E842F /* FirebaseCrashlytics */; };
+		5569AFD32F373011009E842F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD22F373011009E842F /* FirebaseDatabase */; };
+		5569AFD52F373011009E842F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD42F373011009E842F /* FirebaseFirestore */; };
+		5569AFD72F373011009E842F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD62F373011009E842F /* FirebaseStorage */; };
+		5569AFDA2F373095009E842F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD92F373095009E842F /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5569AFBD2F372F15009E842F /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +33,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5569AFD12F373011009E842F /* FirebaseCrashlytics in Frameworks */,
+				5569AFCD2F373011009E842F /* FirebaseAnalytics in Frameworks */,
+				5569AFDA2F373095009E842F /* Kingfisher in Frameworks */,
+				5569AFD32F373011009E842F /* FirebaseDatabase in Frameworks */,
+				5569AFD52F373011009E842F /* FirebaseFirestore in Frameworks */,
+				5569AFCF2F373011009E842F /* FirebaseAuth in Frameworks */,
+				5569AFD72F373011009E842F /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,13 @@
 			);
 			name = GalleryApp;
 			packageProductDependencies = (
+				5569AFCC2F373011009E842F /* FirebaseAnalytics */,
+				5569AFCE2F373011009E842F /* FirebaseAuth */,
+				5569AFD02F373011009E842F /* FirebaseCrashlytics */,
+				5569AFD22F373011009E842F /* FirebaseDatabase */,
+				5569AFD42F373011009E842F /* FirebaseFirestore */,
+				5569AFD62F373011009E842F /* FirebaseStorage */,
+				5569AFD92F373095009E842F /* Kingfisher */,
 			);
 			productName = GalleryApp;
 			productReference = 5569AFBD2F372F15009E842F /* GalleryApp.app */;
@@ -94,6 +118,10 @@
 			);
 			mainGroup = 5569AFB42F372F15009E842F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5569AFD82F373095009E842F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5569AFBE2F372F15009E842F /* Products */;
 			projectDirPath = "";
@@ -332,6 +360,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+		5569AFD82F373095009E842F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5569AFCC2F373011009E842F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5569AFCE2F373011009E842F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5569AFD02F373011009E842F /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		5569AFD22F373011009E842F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5569AFD42F373011009E842F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5569AFD62F373011009E842F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFCB2F373011009E842F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5569AFD92F373095009E842F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5569AFD82F373095009E842F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5569AFB52F372F15009E842F /* Project object */;
 }
