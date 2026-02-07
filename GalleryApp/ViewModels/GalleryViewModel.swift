@@ -10,17 +10,24 @@ import Combine
 
 class GalleryViewModel: ObservableObject {
     @Published var images: [ImageModel] = []
+    @Published var allImages: [ImageModel] = []   // <-- made public so GalleryView can access
     private let service = ImageService()
+    private var currentPage = 0
+    private let pageSize = 4
 
     func fetchImages() {
-        let cached = service.loadCachedImages()
-        if !cached.isEmpty {
-            images = cached
-            return
+        // Load all images (from JSON or Core Data)
+        allImages = service.loadImages()
+        loadNextPage()
+    }
+
+    func loadNextPage() {
+        let start = currentPage * pageSize
+        let end = min(start + pageSize, allImages.count)
+        if start < end {
+            let nextBatch = Array(allImages[start..<end])
+            images.append(contentsOf: nextBatch)
+            currentPage += 1
         }
-        
-        let fresh = service.loadImages()
-        images = fresh
-        service.saveImages(fresh)
     }
 }

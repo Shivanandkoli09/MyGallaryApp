@@ -10,6 +10,7 @@ import Kingfisher
 
 struct GalleryView: View {
     @StateObject var viewModel = GalleryViewModel()
+    @State private var selectedImage: ImageModel?
 
     var body: some View {
         NavigationView {
@@ -21,16 +22,38 @@ struct GalleryView: View {
                             .scaledToFill()
                             .frame(width: 150, height: 150)
                             .clipped()
+                            .onTapGesture {
+                                selectedImage = image
+                            }
                     }
+                }
+                .padding()
+
+                if viewModel.images.count < viewModel.allImages.count {
+                    Button("Load More") {
+                        viewModel.loadNextPage()
+                    }
+                    .padding()
                 }
             }
             .navigationTitle("Gallery")
             .onAppear {
                 viewModel.fetchImages()
             }
+            .sheet(item: $selectedImage) { image in
+                FullscreenImageView(
+                    image: image,
+                    isPresented: Binding(
+                        get: { selectedImage != nil },
+                        set: { if !$0 { selectedImage = nil } }
+                    )
+                )
+            }
         }
     }
 }
+
+
 
 #Preview {
     GalleryView()
