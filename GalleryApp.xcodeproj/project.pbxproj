@@ -16,12 +16,10 @@
 		5569AFDA2F373095009E842F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD92F373095009E842F /* Kingfisher */; };
 		5569AFED2F373CF5009E842F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEC2F373CF5009E842F /* GoogleSignIn */; };
 		5569AFEF2F373CF5009E842F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEE2F373CF5009E842F /* GoogleSignInSwift */; };
-		5569B0022F373F3D009E842F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5569B0012F373F3D009E842F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5569AFBD2F372F15009E842F /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5569B0012F373F3D009E842F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +55,6 @@
 			children = (
 				5569AFBF2F372F15009E842F /* GalleryApp */,
 				5569AFBE2F372F15009E842F /* Products */,
-				5569B0012F373F3D009E842F /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5569B0022F373F3D009E842F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
