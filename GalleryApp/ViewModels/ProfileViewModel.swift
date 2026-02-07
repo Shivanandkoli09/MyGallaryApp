@@ -31,8 +31,10 @@ class ProfileViewModel: ObservableObject {
         do {
             try Auth.auth().signOut()
             user = nil
+            NotificationCenter.default.post(name: NSNotification.Name("UserLoggedOut"), object: nil)
         } catch {
             print("Logout error: \(error.localizedDescription)")
         }
     }
+
 }
