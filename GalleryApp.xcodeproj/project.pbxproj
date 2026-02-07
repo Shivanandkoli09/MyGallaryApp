@@ -17,11 +17,13 @@
 		5569AFED2F373CF5009E842F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEC2F373CF5009E842F /* GoogleSignIn */; };
 		5569AFEF2F373CF5009E842F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEE2F373CF5009E842F /* GoogleSignInSwift */; };
 		5569B0232F37549B009E842F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5569B0222F37549B009E842F /* GoogleService-Info.plist */; };
+		5569B02E2F3763B3009E842F /* GalleryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5569B02C2F3763B3009E842F /* GalleryApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5569AFBD2F372F15009E842F /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5569B0222F37549B009E842F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5569B02D2F3763B3009E842F /* GalleryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GalleryApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -68,6 +70,7 @@
 		5569AFB42F372F15009E842F = {
 			isa = PBXGroup;
 			children = (
+				5569B02C2F3763B3009E842F /* GalleryApp.xcdatamodeld */,
 				5569AFBF2F372F15009E842F /* GalleryApp */,
 				5569AFBE2F372F15009E842F /* Products */,
 				5569B0222F37549B009E842F /* GoogleService-Info.plist */,
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5569B02E2F3763B3009E842F /* GalleryApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +465,19 @@
 			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5569B02C2F3763B3009E842F /* GalleryApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5569B02D2F3763B3009E842F /* GalleryApp.xcdatamodel */,
+			);
+			currentVersion = 5569B02D2F3763B3009E842F /* GalleryApp.xcdatamodel */;
+			path = GalleryApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5569AFB52F372F15009E842F /* Project object */;
 }

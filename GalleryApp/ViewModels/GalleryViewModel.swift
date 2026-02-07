@@ -13,6 +13,14 @@ class GalleryViewModel: ObservableObject {
     private let service = ImageService()
 
     func fetchImages() {
-        images = service.loadImages()
+        let cached = service.loadCachedImages()
+        if !cached.isEmpty {
+            images = cached
+            return
+        }
+        
+        let fresh = service.loadImages()
+        images = fresh
+        service.saveImages(fresh)
     }
 }
