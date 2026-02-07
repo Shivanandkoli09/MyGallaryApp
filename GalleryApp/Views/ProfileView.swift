@@ -12,37 +12,44 @@ struct ProfileView: View {
     @StateObject var viewModel = ProfileViewModel()
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 24) {
             if let user = viewModel.user {
                 if let photoURL = user.photoURL, let url = URL(string: photoURL) {
                     KFImage(url)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 120, height: 120)
                         .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.blue, lineWidth: 3))
+                        .shadow(radius: 6)
                 }
 
                 Text(user.name)
-                    .font(.title)
+                    .font(.title2)
                     .bold()
 
                 Text(user.email)
                     .font(.subheadline)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+
+                Spacer()
 
                 Button(action: {
                     viewModel.logout()
                 }) {
                     Text("Logout")
+                        .font(.headline)
                         .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.red)
-                        .cornerRadius(8)
+                        .cornerRadius(10)
+                        .shadow(radius: 4)
                 }
                 .padding(.horizontal)
             } else {
                 Text("No user logged in")
+                    .foregroundColor(.gray)
             }
         }
         .padding()

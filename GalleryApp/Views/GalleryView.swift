@@ -20,7 +20,7 @@ struct GalleryView: View {
                         KFImage(URL(string: image.url))
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 150, height: 150)
+                            .frame(width: 170, height: 170)
                             .clipped()
                             .onTapGesture {
                                 selectedImage = image

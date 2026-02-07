@@ -1,13 +1,13 @@
 [
-  { "id": "1", "url": "https://picsum.photos/id/1011/300/200" },
-  { "id": "2", "url": "https://picsum.photos/id/1012/300/200" },
-  { "id": "3", "url": "https://picsum.photos/id/1013/300/200" },
-  { "id": "4", "url": "https://picsum.photos/id/1014/300/200" },
-  { "id": "5", "url": "https://picsum.photos/id/1015/300/200" },
-  { "id": "6", "url": "https://picsum.photos/id/1016/300/200" },
-  { "id": "7", "url": "https://picsum.photos/id/1018/300/200" },
-  { "id": "8", "url": "https://picsum.photos/id/1020/300/200" },
-  { "id": "9", "url": "https://picsum.photos/id/1021/300/200" },
-  { "id": "10", "url": "https://picsum.photos/id/1022/300/200" }
+  { "id": "1", "url": "https://picsum.photos/id/1011/1200/800" },
+  { "id": "2", "url": "https://picsum.photos/id/1012/1200/800" },
+  { "id": "3", "url": "https://picsum.photos/id/1013/1200/800" },
+  { "id": "4", "url": "https://picsum.photos/id/1014/1200/800" },
+  { "id": "5", "url": "https://picsum.photos/id/1015/1200/800" },
+  { "id": "6", "url": "https://picsum.photos/id/1016/1200/800" },
+  { "id": "7", "url": "https://picsum.photos/id/1018/1200/800" },
+  { "id": "8", "url": "https://picsum.photos/id/1020/1200/800" },
+  { "id": "9", "url": "https://picsum.photos/id/1021/1200/800" },
+  { "id": "10", "url": "https://picsum.photos/id/1022/1200/800" }
 ]
 
