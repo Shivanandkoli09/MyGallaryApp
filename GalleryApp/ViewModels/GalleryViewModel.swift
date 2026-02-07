@@ -10,9 +10,9 @@ import Combine
 
 class GalleryViewModel: ObservableObject {
     @Published var images: [ImageModel] = []
-    @Published var isLoading: Bool = false
+    private let service = ImageService()
 
     func fetchImages() {
-        
+        images = service.loadImages()
     }
 }
