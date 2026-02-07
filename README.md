@@ -18,3 +18,15 @@ Basic gallery application using SwiftUI + MVVM.
 2. Run `pod install` or use Swift Package Manager
 3. Add your own `GoogleService-Info.plist` from Firebase Console
 
+## Architecture
+- MVVM (Model-View-ViewModel)
+- Repository Pattern for data access
+- Dependency Injection for testability
+- Core Data for offline persistence
+- Kingfisher for image caching
+
+## Best Practices
+- Separation of concerns
+- Clean architecture layers
+- Secure API key management (GoogleService-Info.plist excluded)
+- Incremental commits with clear messages
