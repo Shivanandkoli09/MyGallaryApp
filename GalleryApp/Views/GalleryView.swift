@@ -49,6 +49,13 @@ struct GalleryView: View {
                     )
                 )
             }
+            .navigationBarItems(trailing:
+                NavigationLink(destination: ProfileView()) {
+                    Image(systemName: "person.circle")
+                        .font(.title)
+                }
+            )
+
         }
     }
 }
