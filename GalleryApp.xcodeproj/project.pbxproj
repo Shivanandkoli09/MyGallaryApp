@@ -16,15 +16,30 @@
 		5569AFDA2F373095009E842F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFD92F373095009E842F /* Kingfisher */; };
 		5569AFED2F373CF5009E842F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEC2F373CF5009E842F /* GoogleSignIn */; };
 		5569AFEF2F373CF5009E842F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5569AFEE2F373CF5009E842F /* GoogleSignInSwift */; };
+		5569B0232F37549B009E842F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5569B0222F37549B009E842F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5569AFBD2F372F15009E842F /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5569B0222F37549B009E842F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5569B0252F3755A1009E842F /* Exceptions for "GalleryApp" folder in "GalleryApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5569AFBC2F372F15009E842F /* GalleryApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5569AFBF2F372F15009E842F /* GalleryApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5569B0252F3755A1009E842F /* Exceptions for "GalleryApp" folder in "GalleryApp" target */,
+			);
 			path = GalleryApp;
 			sourceTree = "<group>";
 		};
@@ -55,6 +70,7 @@
 			children = (
 				5569AFBF2F372F15009E842F /* GalleryApp */,
 				5569AFBE2F372F15009E842F /* Products */,
+				5569B0222F37549B009E842F /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5569B0232F37549B009E842F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +308,7 @@
 				DEVELOPMENT_TEAM = 36LTPM9X2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +341,7 @@
 				DEVELOPMENT_TEAM = 36LTPM9X2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

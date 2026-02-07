@@ -12,13 +12,18 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            Text("Welcome to GalleryApp")
-            Button("Login with Google") {
-                viewModel.login()
+            if viewModel.isLoggedIn {
+                GalleryView() // Navigate to gallery after login
+            } else {
+                Text("Welcome to GalleryApp")
+                Button("Login with Google") {
+                    viewModel.login()
+                }
             }
         }
     }
 }
+
 #Preview {
     LoginView()
 }
